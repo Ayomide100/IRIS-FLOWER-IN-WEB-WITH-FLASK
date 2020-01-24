@@ -1,0 +1,21 @@
+{% extends 'layout.html'%}
+{%block content%}
+<h3><p style="color: white; font-size: 20px; text-align: center;">Results for Comment</p></h3>
+
+<div class="results">
+	{% if prediction ==[1] %}
+	<h2 style="color: blue"> Flower Type: Setosa</h2>
+	{%elif prediction == [2]%}
+	<h2 style="color: blue">Flower Type: Versicolor</h2>
+	{%else%}
+	<h2 style="color: blue">Flower Type: Virginical</h2>
+	{% endif %}
+
+	<h2> Model Accuracy: {{Accuracy}}</h2>
+
+</div>
+<br/>
+<a href="{{url_for('home')}}", style="border: 1px;"> Back</a>
+
+
+{%endblock%}

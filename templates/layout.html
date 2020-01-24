@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ML APP</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+	<div class="container">
+		<div id ='brandname'>
+			<h4>ML APP</h4>
+		</div>
+		<center><h2>IRIS FLOWER CLASSIFIER</h2></center>
+	</div>
+</header>
+
+<div class="dataset">
+{%block content%}
+{%endblock%}
+</div>
+
+</body>
+</html>

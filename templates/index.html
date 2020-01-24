@@ -1,0 +1,25 @@
+{% extends 'layout.html'%}
+{% block content %}
+
+	<form action="{{url_for('predict')}}" method="POST">
+			<div class="containerd">
+		<h4>Enter Your Values</h4><br/>
+	<div class="do">
+		<input type="text" name="SL" placeholder="Sepal_length" required>
+	</div>
+		
+	<div class="do">
+		<input type="text" name="SW" placeholder="Sepal_width" required>
+	</div>
+	<div class="do">
+		<input type="text"  name="PL" placeholder="Petal_length" required>
+	</div>
+		
+	<div class="do">
+		<input type="text" name="PW" placeholder="Petal_width" required>
+	</div>
+		
+		<button  class="submit">Submit</button>
+	</div>
+	</form>
+{% endblock %}
